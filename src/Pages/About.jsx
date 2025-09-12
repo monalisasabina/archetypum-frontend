@@ -1,7 +1,10 @@
+import "./About.css"
+
 function About(){
     return(
-        <div>
+        <div className="about-wrapper">
             <div className="about-container">
+                
                 <h1>About Us</h1>
             
             </div>
