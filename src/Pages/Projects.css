@@ -1,0 +1,109 @@
+/* Projects.css */
+
+/* Overall container */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header section */
+.projects-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-header h1 {
+    font-size: 3rem;
+    color: #ff9800; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.projects-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Section titles */
+.section-title {
+    color: #ff9800;
+    font-size: 2rem;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+/* Swiper Project Cards */
+.project-card {
+    background-color: #fffaf0; /* Light orange tint */
+    border: 2px solid #ff9800; /* Accent border */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.2);
+}
+
+.project-card h2 {
+    color: #ff9800;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+/* Project Images */
+.project-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ff9800;
+    transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+/* Grid for Other Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff9800;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ff9800;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff9800;
+}
