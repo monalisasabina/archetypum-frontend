@@ -1,6 +1,6 @@
 .about-wrapper {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 40px 20px;
   max-width: 1200px; /* widen a bit for modern screens */
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
@@ -31,15 +31,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* two columns */
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 .about-image img {
   width: 100%;
+  height: 350px;
   max-width: 450px;
   border-radius: 20px; /* rounded edges for a modern touch */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
   transition: transform 0.3s ease;
+  margin-top: 20px;
 }
 
 .about-image img:hover {
