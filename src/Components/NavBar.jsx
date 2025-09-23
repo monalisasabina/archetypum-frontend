@@ -23,8 +23,9 @@ const NavBar = () => {
             {/* Navigation Links */}
             <div className={`nav-links ${isOpen ? "active" : ""}`}>
                <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
-               <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
+               <NavLink to="/about" onClick={() => setIsOpen(false)}>About Us</NavLink>
                <NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink>
+               <NavLink to="/blog"  onClick={() => setIsOpen(false)}>Blog</NavLink>
                <NavLink to="/contact_us" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
             </div>
         </nav>

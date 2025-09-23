@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import ContactUs from "./Pages/ContactUs";
 import ErrorPage from "./Pages/ErrorPage";
+import Blog from "./Pages/Blog";
 
 const routes = [
     {
@@ -27,6 +28,10 @@ const routes = [
             path: "/contact_us",
             element: <ContactUs />
         },
+        {
+            path: "/blog",
+            element: <Blog />
+        }
      
       ]
     },
