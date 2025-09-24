@@ -5,6 +5,8 @@ import Projects from "./Pages/Projects";
 import ContactUs from "./Pages/ContactUs";
 import ErrorPage from "./Pages/ErrorPage";
 import Blog from "./Pages/Blog";
+import BlogPage from "./Pages/BlogPage";
+import BlogForm from "./Pages/BlogForm";
 
 const routes = [
     {
@@ -31,6 +33,15 @@ const routes = [
         {
             path: "/blog",
             element: <Blog />
+        },
+        {
+            path: "/blog/:blogId",
+            element: <BlogPage />
+        },
+        {
+            path: "/blog-form",
+            element: <BlogForm />
+
         }
      
       ]

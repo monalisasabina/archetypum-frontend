@@ -1,4 +1,4 @@
-import projects from "./projectList";
+import projects from "../Components/projectList";
 import "./Projects.css"
 
 // Swiper Imports
