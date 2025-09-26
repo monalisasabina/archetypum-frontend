@@ -1,10 +1,23 @@
 import { Link, useNavigate } from "react-router-dom";
 import blogList from "../Components/blogList"
+import { useState } from "react";
+import "./Blog.css"
 
 console.log(blogList)
 
 const Blog = () =>{
 
+    // // State to manage blogs
+    // const [blogs, setBlogs] = useState([]);
+
+    // // __________________________________________________________
+    // // Function to add a new blog
+    // const addBlog = (newBlog) => {
+    //     setBlogs([newBlog, ...blogs]);
+    // };
+
+
+    // __________________________________________________________
     // Calculating time to read
     const calculateReadTime = (blogTextArray) => {
 
@@ -17,13 +30,13 @@ const Blog = () =>{
         const wordsPerMinute = 200;
 
         // round up
-        const time = Math.ceil(wordCount / wordCount);
+        const time = Math.ceil(wordCount / wordsPerMinute);
 
         return `${time} min read`
     };
 
     // Navigate to BlogForm
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     // __________________________________________
 
@@ -74,8 +87,8 @@ const Blog = () =>{
 
             </div>
 
-            {/* Blog Form */}
-            <button onClick={() => navigate('/blog-form')}>Blog Form</button>
+            {/* Blog Form
+            <button onClick={() => navigate('/blog-form')}>Blog Form</button> */}
 
         </div>
     )
