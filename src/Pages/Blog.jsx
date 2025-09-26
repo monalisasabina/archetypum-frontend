@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import blogList from "../Components/blogList"
 import { useState } from "react";
 import "./Blog.css"
+import { FcClock } from "react-icons/fc";
 
 console.log(blogList)
 
@@ -60,8 +61,10 @@ const Blog = () =>{
                         <div className="blog-content">
 
                             {/* Blog Titles */}
+                            <p className="blog-category">{blog.category}</p>
                             <h2>{blog.title}</h2>
                             <p className="blog-subtitle">{blog.subtitle}</p>
+                           
 
                             {/* Author Details */}
                             <div className="blog-info">
@@ -70,12 +73,12 @@ const Blog = () =>{
                                     alt={blog.author.name}
                                     className="author-pic"
                                 />
-                                <span>{blog.author.name}</span>
+                                <span>By {blog.author.name}</span>
                             </div>
 
                             {/* Other Blog Content */}
                             <p className="blog-date">{blog.date}</p>
-                            <p className="read-time">{calculateReadTime(blog.blogText)}</p>
+                            <p className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</p>
 
                             {/* Read More */}
                             <Link to={blog.link} className="read-more"> Read More</Link>

@@ -64,11 +64,11 @@
 }
 
 .author-pic {
-  width: 35px;
-  height: 35px;
+  width: 35px !important;
+  height: 35px !important;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ff9800;
+  border: 1px solid #ff9800;
 }
 
 .blog-info span {
