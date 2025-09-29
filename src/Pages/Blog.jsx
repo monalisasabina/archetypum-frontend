@@ -1,21 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import blogList from "../Components/blogList"
-import { useState } from "react";
 import "./Blog.css"
 import { FcClock } from "react-icons/fc";
 
 console.log(blogList)
 
 const Blog = () =>{
-
-    // // State to manage blogs
-    // const [blogs, setBlogs] = useState([]);
-
-    // // __________________________________________________________
-    // // Function to add a new blog
-    // const addBlog = (newBlog) => {
-    //     setBlogs([newBlog, ...blogs]);
-    // };
 
 
     // __________________________________________________________
@@ -36,11 +26,6 @@ const Blog = () =>{
         return `${time} min read`
     };
 
-    // Navigate to BlogForm
-    // const navigate = useNavigate()
-
-    // __________________________________________
-
     return(
         <div className="blog-cont">
 
@@ -55,48 +40,47 @@ const Blog = () =>{
             <div className="blog-grid">
 
                 {blogList.map((blog) => (
-                    <div key={blog.id} className="blog-card">
-                        <img src={blog.image} alt={blog.title} />
+                    
+                    
+                    <Link to={blog.link} key={blog.id} className="blog-card-link">
 
-                        <div className="blog-content">
+                        <div key={blog.id} className="blog-card">
 
-                            {/* Blog Titles */}
-                            <p className="blog-category">{blog.category}</p>
-                            <h2>{blog.title}</h2>
-                            <p className="blog-subtitle">{blog.subtitle}</p>
+                            {/* Blog Image */}
+                            <img src={blog.image} alt={blog.title} />
+
+                            <div className="blog-content">
+
+                                {/* Blog Titles */}
+                                <p className="blog-category">{blog.category}</p>
+                                <h2>{blog.title}</h2>
+                                <p className="blog-subtitle">{blog.subtitle}</p>
                            
 
-                            {/* Author Details */}
-                            <div className="blog-info">
-                                <img
-                                    src={blog.author.profilePicture}
-                                    alt={blog.author.name}
-                                    className="author-pic"
-                                />
-                                <span>By {blog.author.name}</span>
+                                {/* Author Details */}
+                                <div className="blog-info">
+                                  <img
+                                     src={blog.author.profilePicture}
+                                     alt={blog.author.name}
+                                     className="author-pic"
+                                  />
+                                   <span>By {blog.author.name}</span>
+                                </div>
+
+                                {/* Other Blog Content */}
+                                <p className="blog-date">{blog.date}</p>
+                                <p className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</p>
+
                             </div>
-
-                            {/* Other Blog Content */}
-                            <p className="blog-date">{blog.date}</p>
-                            <p className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</p>
-
-                            {/* Read More */}
-                            <Link to={blog.link} className="read-more"> Read More</Link>
-
                         </div>
-                        
-                    </div>
+
+                    </Link>
                 ))}
 
             </div>
 
-            {/* Blog Form
-            <button onClick={() => navigate('/blog-form')}>Blog Form</button> */}
-
         </div>
     )
-
-
 
 }
 export default Blog
