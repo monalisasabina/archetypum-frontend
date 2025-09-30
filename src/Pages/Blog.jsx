@@ -11,7 +11,8 @@ const Blog = () =>{
     // __________________________________________________________
     // Calculating time to read
     const calculateReadTime = (blogTextArray) => {
-
+       
+        // join array into single string
         const fullText = blogTextArray.join("");
 
         // split by spaces
@@ -25,6 +26,7 @@ const Blog = () =>{
 
         return `${time} min read`
     };
+    // __________________________________________________________
 
     return(
         <div className="blog-cont">
@@ -33,8 +35,6 @@ const Blog = () =>{
             <div className="blog-header">
                 <h1>Blog</h1>
             </div>
-
-           
 
             {/* Blog Content */}
             <div className="blog-grid">
@@ -64,12 +64,16 @@ const Blog = () =>{
                                      alt={blog.author.name}
                                      className="author-pic"
                                   />
-                                   <span>By {blog.author.name}</span>
+                                   <span>{blog.author.name}</span>
                                 </div>
 
                                 {/* Other Blog Content */}
-                                <p className="blog-date">{blog.date}</p>
-                                <p className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</p>
+                                <div className="blog-meta">
+
+                                    {/* <p className="blog-date">{blog.date}</p> */}
+                                    
+                                    <span className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</span>
+                                </div>
 
                             </div>
                         </div>

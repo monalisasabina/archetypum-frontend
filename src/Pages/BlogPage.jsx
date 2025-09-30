@@ -28,7 +28,7 @@ const BlogPage = () => {
     };
 
     // useNavigate
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     return(
         <div className="blog-full">
@@ -45,6 +45,15 @@ const BlogPage = () => {
                 <p key={idx}>{para}</p>
             ))}
 
+            {/* About Author */}
+            <div className="blog-page-info">
+                  <img src={blog.author.profilePicture} />
+                  <p>{blog.author.bio}</p>
+                  <p>Twitter {blog.author.socialLinks.twitter}</p>
+                  <p>LinkedIn {blog.author.socialLinks.linkedin}</p>
+            </div>
+          
+
             <button
                   className="blog-button"
                   onClick={() => navigate("/blog")}
@@ -53,6 +62,6 @@ const BlogPage = () => {
             
         </div>
     )
-}
+};
 
 export default BlogPage;

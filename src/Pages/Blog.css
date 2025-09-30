@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0078D7;   /* main blue */
+  --primary-color: #0081c9;   /* main blue */
   --primary-dark: #005a9e;    /* hover/darker blue */
   --text-dark: #333;
   --text-light: #666;
@@ -100,11 +100,24 @@
 }
 
 /* Dates & Read Time */
-.blog-date,
-.read-time {
-  font-size: 0.8rem;
-  color: #777;
-  margin: 0.2rem 0;
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+ .read-time {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.blog-meta svg{
+  font-size: 1.1rem;
+  color: var(--primary-color);
 }
 
 /* Responsive */
