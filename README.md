@@ -14,7 +14,7 @@ Click the **Fork** button at the top-right of this repository page to create you
 
 Then open your terminal and clone. When successful, move into the project folder
 
-### 2. Install depnances
+### 2. Install dependencies
 Ensure Node.js and npm are installed
 
    node -v
@@ -22,14 +22,18 @@ Ensure Node.js and npm are installed
 
 Then install required packages 
    
+   ```bash
    npm install
+   ```
 
 
 ### 4. Run the Server
 
 To start the server
-
+   
+   ```bash
    npm run dev
+   ```
 
 
 By default, you will use the link below to open the website locally:
