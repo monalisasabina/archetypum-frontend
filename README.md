@@ -16,10 +16,13 @@ Then open your terminal and clone. When successful, move into the project folder
 
 ### 2. Install dependencies
 Ensure Node.js and npm are installed
-
+   
+   ```bash
    node -v
-   npm -v
 
+   
+   npm -v
+   ```
 Then install required packages 
    
    ```bash
