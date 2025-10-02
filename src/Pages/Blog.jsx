@@ -36,6 +36,15 @@ const Blog = () =>{
                 <h1>Blog</h1>
             </div>
 
+            {/* Search Bar */}
+            <div className="blog-search">
+                <input
+                     type="search"
+                     placeholder="Search Category, Author or Blog"
+                     value=""
+                />
+            </div>
+
             {/* Blog Content */}
             <div className="blog-grid">
 

@@ -6,7 +6,7 @@ import ContactUs from "./Pages/ContactUs";
 import ErrorPage from "./Pages/ErrorPage";
 import Blog from "./Pages/Blog";
 import BlogPage from "./Pages/BlogPage";
-import BlogForm from "./Pages/BlogForm";
+import BlogForm from "./AdminPages/BlogForm";
 
 const routes = [
     {

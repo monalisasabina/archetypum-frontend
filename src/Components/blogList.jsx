@@ -9,10 +9,11 @@ const blogList = [
     author: {
       name: "Monalisa MpendaRaha",
       profilePicture: "https://robohash.org/janedoe.png?set=set1",
-      bio: "Jane is a front-end developer with a passion for React and modern web technologies.",
+      bio: "Monalisa is a front-end developer with a passion for React and modern web technologies.",
       socialLinks: {
-        twitter: "https://twitter.com/jane_doe",
-        linkedin: "https://linkedin.com/in/jane-doe"
+        facebook: "https://facebook.com/monalisa_sabina",
+        twitter: "https://twitter.com/monalisa_MpendaRaha",
+        linkedin: "https://linkedin.com/in/MpendaRaha"
       }
     },
     blogText: [

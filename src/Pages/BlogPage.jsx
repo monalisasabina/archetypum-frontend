@@ -1,5 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom"
 import blogList from "../Components/blogList"
+import "./BlogPage.css"
+import { FaFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const BlogPage = () => {
     
@@ -22,7 +27,7 @@ const BlogPage = () => {
         const wordsPerMinute = 200;
 
         // round up
-        const time = Math.ceil(wordCount / wordCount);
+        const time = Math.ceil(wordCount / wordsPerMinute);
 
         return `${time} min read`
     };
@@ -34,10 +39,21 @@ const BlogPage = () => {
         <div className="blog-full">
             <h1>{blog.title}</h1>
             <h3>{blog.subtitle}</h3>
-            <p>By {blog.author.name} | {blog.date} | {calculateReadTime(blog.blogText)}  </p>
+
+            {/* Blog Meta */}
+            <p className="blog-page-meta">
+                <span className="blog-author">By {blog.author.name} </span>
+                <span className="separator"> • </span>
+                <span className="blog-date">{blog.date}</span>
+                <span className="separator"> • </span>
+                <span className="blog-read">{calculateReadTime(blog.blogText)}</span>
+            </p>
+            
+            {/* Main Blog Image */}
             <img 
                  src={blog.image}
                  alt={blog.title}
+                 className="blog-page-img"
             />
             
             {/* Display the BlogText in Paragraphs */}
@@ -47,13 +63,20 @@ const BlogPage = () => {
 
             {/* About Author */}
             <div className="blog-page-info">
-                  <img src={blog.author.profilePicture} />
-                  <p>{blog.author.bio}</p>
-                  <p>Twitter {blog.author.socialLinks.twitter}</p>
-                  <p>LinkedIn {blog.author.socialLinks.linkedin}</p>
+                  <img src={blog.author.profilePicture}  alt={blog.author.name}/>
+                  <div className="blog-page-info-content">
+                    <p>{blog.author.bio}</p>
+                    <div className="blog-page-info-socials">
+                        <a href={blog.author.socialLinks.facebook}>  <FaFacebook /> </a>  
+                        <a href={blog.author.socialLinks.instagram}>  <FaInstagramSquare /> </a>
+                        <a href={blog.author.socialLinks.twitter}> <FaSquareXTwitter /> </a> 
+                        <a href={blog.author.socialLinks.linkedin}> <FaLinkedin /> </a>
+                    </div>
+                  </div>   
             </div>
-          
 
+            
+           {/* More Blogs Button */}
             <button
                   className="blog-button"
                   onClick={() => navigate("/blog")}
