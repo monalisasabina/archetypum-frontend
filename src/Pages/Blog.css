@@ -24,6 +24,30 @@
   color: var(--primary-color);
 }
 
+/* Search Bar */
+/* Search Bar */
+.blog-search {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-search input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-search input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 6px rgba(0, 129, 201, 0.2);
+  outline: none;
+}
+
+
 /* Blog Grid */
 .blog-grid {
   display: grid;

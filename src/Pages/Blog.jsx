@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import blogList from "../Components/blogList"
 import "./Blog.css"
 import { FcClock } from "react-icons/fc";
+import NewsletterSignup from "../Components/newsletter";
+import { useState } from "react";
 
 console.log(blogList)
 
 const Blog = () =>{
+
+    const [searchTerm, setSearchTerm] = useState("");
 
 
     // __________________________________________________________
@@ -28,6 +32,18 @@ const Blog = () =>{
     };
     // __________________________________________________________
 
+    //Filter Blogs
+    const filteredBlogs = blogList.filter((blog) => {
+         
+        // Combine relevant fields into a single string for searching
+        const text =`${blog.title} ${blog.category} ${blog.author.name} ${blog.category}`.toLowerCase();
+
+        // Check if the search term is included in the text
+        return text.includes(searchTerm.toLowerCase());
+    });
+
+    // __________________________________________________________
+
     return(
         <div className="blog-cont">
 
@@ -41,15 +57,21 @@ const Blog = () =>{
                 <input
                      type="search"
                      placeholder="Search Category, Author or Blog"
-                     value=""
+                     value={searchTerm}
+                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
             </div>
+
 
             {/* Blog Content */}
             <div className="blog-grid">
 
-                {blogList.map((blog) => (
-                    
+                {/* Newsletter Signup */}
+                <div className="blog-card newsletter-card">
+                    <NewsletterSignup />
+                </div>
+
+                {filteredBlogs.map((blog) => (
                     
                     <Link to={blog.link} key={blog.id} className="blog-card-link">
 
@@ -59,6 +81,7 @@ const Blog = () =>{
                             <img src={blog.image} alt={blog.title} />
 
                             <div className="blog-content">
+
 
                                 {/* Blog Titles */}
                                 <p className="blog-category">{blog.category}</p>
