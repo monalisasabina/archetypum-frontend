@@ -1,0 +1,158 @@
+/* .contact-content{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 129, 201, 0.2); 
+    height: 300px;
+    width: 300px;
+    display: flex;
+} */
+
+
+/* 🌐 Overall Layout */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* 🏷️ Header */
+.contact-header h1 {
+  color: #0081c9;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 🧱 Content Section (Two-column layout on larger screens) */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* 🏢 Company Contacts */
+.contact-contacts {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f5f9ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-contacts h3 {
+  color: #0081c9;
+  margin-bottom: 1rem;
+}
+
+/* 📝 Contact Form */
+.contact-form {
+  flex: 1.2;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+/* 📋 Form Inputs */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #d0e3f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0081c9;
+  box-shadow: 0 0 0 2px rgba(0, 129, 201, 0.1);
+}
+
+/* 🌍 Phone Input (from react-phone-input-2) */
+.contact-mobile .react-tel-input .form-control {
+  width: 100% !important;
+  border-radius: 8px !important;
+  padding: 0.9rem !important;
+  border: 1px solid #d0e3f0 !important;
+  font-size: 1rem !important;
+}
+
+.contact-mobile .react-tel-input .form-control:focus {
+  border-color: #0081c9 !important;
+  box-shadow: 0 0 0 2px rgba(0, 129, 201, 0.1) !important;
+}
+
+/* ✉️ Textarea */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 🚀 Send Button */
+.contact-form button {
+  background-color: #0081c9;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #006ea8;
+  transform: translateY(-2px);
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-form,
+  .contact-contacts {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+  }
+}
