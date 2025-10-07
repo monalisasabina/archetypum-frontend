@@ -19,22 +19,20 @@ function ContactUs(){
 
            {/* Header */}
            <div className="contact-header">
-              <h1 >Contact Us</h1>
+              <h1 >Let's Connect</h1>
+              <p>We're always open to feedback and new opportunities.</p>
            </div>
 
            {/* Contact-Content */}
            <div className="contact-content">
               
-              {/* Company Contacts */}
-              <div className="contact-contacts">
-                <h3>Company Contacts come on this side</h3>
-
-              </div>
-             
+            
              {/* Contact Form */}
               <div className="contact-form">
 
                 <form onSubmit={handleSubmit}>
+                    <h3>Send Us a Message</h3>
+
                     {/* First Name */}
                     <input
                          type="text"
@@ -82,6 +80,12 @@ function ContactUs(){
                     <button>Send Message</button>
 
                 </form>
+
+              </div>
+
+              {/* Company Contacts */}
+              <div className="contact-contacts">
+                <h3>Company Contacts come on this side</h3>
 
               </div>
 
