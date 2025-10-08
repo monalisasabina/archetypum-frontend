@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Logo */
@@ -16,6 +17,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #ff9800;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Links */

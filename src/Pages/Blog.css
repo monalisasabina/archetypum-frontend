@@ -10,6 +10,7 @@
 .blog-cont {
   padding: 2rem;
   background-color: var(--bg-light);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Header */
