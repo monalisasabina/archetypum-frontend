@@ -18,8 +18,8 @@ const Projects = () => {
     ]
     
     // Project functions
-    const recentProjects = projects.slice(0, 5); // Get the first 5 projects
-    const otherProjects = projects.slice(5); // Get the remaining projects
+    const recentProjects = sortedProjects.slice(0, 5); // Get the first 5 projects
+    const otherProjects = sortedProjects.slice(5); // Get the remaining projects
 
     return (
         <div className="projects-container">
@@ -63,7 +63,7 @@ const Projects = () => {
             {/* OTHER PROJECTS */}
             {otherProjects.length > 0 && (
                 <div>
-                    <h2 className="section-title">Other Projects</h2>
+                    <h2 className="section-other-title">Other Projects</h2>
                     <div className="projects-grid">
                         {otherProjects.map((project) => (
 
