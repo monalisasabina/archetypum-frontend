@@ -7,9 +7,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 
+    // Sort projects by date
+    const sortedProjects = [
+
+        ...projects.sort((a, b) => new Date(b.date) - new Date(a.date))
+    ]
+    
+    // Project functions
     const recentProjects = projects.slice(0, 5); // Get the first 5 projects
     const otherProjects = projects.slice(5); // Get the remaining projects
 
@@ -32,17 +40,21 @@ const Projects = () => {
                {recentProjects.map((project) => (
                      <SwiperSlide key={project.id}>
                          <div className="project-card">
-                            <h2>{project.name}</h2>
-                            <div className="project-images">
-                                {project.images.map((image, index) => (
-                                    <img
-                                       key={index}
-                                       src={image}
-                                       alt={`${project.name} ${index + 1}`}
-                                    />
-                                ))}
+                            <h2>{project.title}</h2>
+                            <div className="project-thumbnail">
+                                <img
+                                    src={project.thumbnail}
+                                    alt={`${project.title} Thumbnail`}
+                                />
+                                
                             </div>
-                            <p className="project-description">{project.description}</p>
+                            <p className="project-subtitle">{project.subtitle}</p>
+
+                            {/* Read More Button */}
+                            <Link to={`/projects/${project.id}`} className="project-link">
+                                <button className="project-button">Read More</button>
+                            </Link>
+
                         </div>
                     </SwiperSlide>
                 ))}
@@ -54,19 +66,24 @@ const Projects = () => {
                     <h2 className="section-title">Other Projects</h2>
                     <div className="projects-grid">
                         {otherProjects.map((project) => (
-                            <div key={project.id} className="project-card">
-                                <h2>{project.name}</h2>
-                                <div className="project-images">
-                                    {project.images.map((image, index) => (
-                                        <img
-                                            key={index}
-                                            src={image}
-                                            alt={`${project.name} ${index + 1}`}
-                                        />
-                                    ))}
-                                </div>
-                                <p className="project-description">{project.description}</p>
-                            </div>
+
+                            <Link to={`/projects/${project.id}`} key={project.id} className="project-other-card-link">
+
+                               <div key={project.id} className="project-other-card">
+                                  <h2>{project.title}</h2>
+                                  <div className="project-other-thumbnails">
+
+                                     <img
+                                        src={project.thumbnail}
+                                        alt={`${project.title} Thumbnail`}
+                                     />
+                                
+                                  
+                                  </div>
+                                  <p className="project-other-subtitle">{project.subtitle}</p>
+                              </div>
+                            </Link>
+
                         ))}
                     </div>
                 </div>

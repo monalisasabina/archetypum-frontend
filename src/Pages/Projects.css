@@ -18,18 +18,18 @@
 
 .projects-header h1 {
     font-size: 3rem;
-    color: #ff9800; /* Accent color */
+    color: #0081c9; /* Accent color */
     margin-bottom: 10px;
 }
 
 .projects-header p {
     font-size: 1.2rem;
-    color: #666;
+    color: #555;
 }
 
 /* Section titles */
 .section-title {
-    color: #ff9800;
+    color: #0081c9;
     font-size: 2rem;
     margin: 30px 0 15px;
     text-align: center;
@@ -37,8 +37,8 @@
 
 /* Swiper Project Cards */
 .project-card {
-    background-color: #fffaf0; /* Light orange tint */
-    border: 2px solid #ff9800; /* Accent border */
+    background-color: #c4e0ef; 
+    border: 2px solid #0081c9; 
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -47,11 +47,11 @@
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(15, 102, 119, 0.557);
 }
 
 .project-card h2 {
-    color: #ff9800;
+    color: #0081c9;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
@@ -67,10 +67,10 @@
 
 .project-images img {
     width: 100%;
-    max-width: 140px;
+    max-width: 160px;
     border-radius: 10px;
     object-fit: cover;
-    border: 2px solid #ff9800;
+    border: 2px solid #0081c9;
     transition: transform 0.3s ease;
 }
 
@@ -93,9 +93,27 @@
     gap: 30px;
     margin-top: 20px;
 }
+/* Other projects card */
+.project-other-card{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.project-other-card h2{
+    text-align: center;
+    color: #0081c9;
+    transition: transform 0.3s ease;
+}
+
+.project-other-card:hover {
+    transform: scale(1.05);
+}
+
 
 /* Swiper Navigation Arrows */
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
     color: #ff9800;
 }
@@ -106,4 +124,4 @@
 
 .swiper-pagination-bullet-active {
     background-color: #ff9800;
-}
+} */

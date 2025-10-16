@@ -7,6 +7,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import Blog from "./Pages/Blog";
 import BlogPage from "./Pages/BlogPage";
 import BlogForm from "./AdminPages/BlogForm";
+import ProjectsPage from "./Pages/ProjectsPage";
 
 const routes = [
     {
@@ -25,6 +26,10 @@ const routes = [
         {
             path: "/projects",
             element: <Projects />
+        },
+        {
+            path: "/projects/:projectId",
+            element: <ProjectsPage />
         },
         {
             path: "/contact_us",

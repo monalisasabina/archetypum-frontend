@@ -82,7 +82,7 @@ function ContactUs(){
                   <FaRegClock /> 
                   <div className="info-text">
                     <p><strong>Working Hours:</strong></p>
-                    <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+                    <p>Mon - Sat: 9:00 AM - 5:00 PM</p>
                   </div>
                 </div>
 
