@@ -13,7 +13,6 @@ const Projects = () => {
 
     // Sort projects by date
     const sortedProjects = [
-
         ...projects.sort((a, b) => new Date(b.date) - new Date(a.date))
     ]
     
@@ -78,7 +77,6 @@ const Projects = () => {
                                         alt={`${project.title} Thumbnail`}
                                      />
                                 
-                                  
                                   </div>
                                   <p className="project-other-subtitle">{project.subtitle}</p>
                               </div>
