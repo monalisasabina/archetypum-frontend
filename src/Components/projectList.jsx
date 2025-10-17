@@ -11,10 +11,16 @@ const projects = [
     thumbnail: houseImage1,
     images: [houseImage1, houseImage2, houseImage3],
     dateAdded: "2025-10-13",
+    location: "Nairobi, Kenya",
+    clientName: "John Mwangi",
     description: [
       "Project Alpha represents a bold step toward modern residential architecture. Its sleek geometry and clean lines are paired with functional interior layouts that maximize light and space. Each room flows seamlessly, creating an environment where beauty meets practicality for a sophisticated, contemporary living experience.",
       "With Project Alpha, innovation is brought to life through balanced proportions and smart design solutions. The exterior’s modern aesthetic complements spacious interiors designed for comfort and creativity. Large windows invite natural light, while open layouts ensure both elegance and functionality in every corner of this visionary home.",
       "Project Alpha is crafted with precision and purpose, embodying architectural excellence. Its streamlined form, open plan, and natural finishes create a striking yet warm atmosphere. The project celebrates minimalism without compromising comfort, offering residents a serene environment that reflects thoughtful design and modern elegance."
+    ],
+    testimonials: [
+      "“This team exceeded my expectations — every detail was handled with care and creativity.” — John Mwangi",
+      "“I’m proud to call Project Alpha my home. It’s modern, bright, and perfectly built.”"
     ]
   },
   {
@@ -23,11 +29,16 @@ const projects = [
     subtitle: "Urban Living Redefined",
     thumbnail: houseImage2,
     images: [houseImage2, houseImage3, houseImage4],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-09-21",
+    location: "Kisumu, Kenya",
+    clientName: "Urban Edge Ltd.",
     description: [
-      "Project Beta redefines urban living with its innovative design and functional spaces. This project combines modern aesthetics with practical solutions, creating a home that is both stylish and comfortable. The open floor plan allows for flexible use of space, while large windows provide ample natural light.",
-      "The design of Project Beta emphasizes sustainability and energy efficiency, incorporating eco-friendly materials and smart home technologies. The result is a residence that not only meets the demands of modern living but also contributes positively to the environment.",
-      "With its contemporary architecture and thoughtful layout, Project Beta offers a unique living experience in the heart of the city. The project showcases how urban homes can be both functional and beautiful, providing a perfect blend of style, comfort, and sustainability."
+      "Project Beta redefines urban living with its innovative design and functional spaces. The structure blends modern materials with sustainable techniques, creating a dynamic environment that supports both work and leisure. It brings a new level of sophistication and efficiency to the heart of the city’s growing skyline.",
+      "The design of Project Beta emphasizes sustainability and energy efficiency. Carefully positioned openings and strategic insulation reduce energy usage without sacrificing comfort. It’s a symbol of what forward-thinking urban development can achieve while respecting environmental and community values.",
+      "With its contemporary architecture and thoughtful layout, Project Beta offers a unique living experience. This project embodies the evolution of urban architecture, blending functionality with elegance to create spaces where people thrive and communities grow."
+    ],
+    testimonials: [
+      "“Project Beta has transformed how we think about urban housing. Impressive work!” — Urban Edge Ltd."
     ]
   },
   {
@@ -36,11 +47,16 @@ const projects = [
     subtitle: "Sustainable Living",
     thumbnail: houseImage3,
     images: [houseImage2, houseImage1, houseImage4],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-08-30",
+    location: "Nakuru, Kenya",
+    clientName: "GreenBuild Co.",
     description: [
-      "Project Gamma explores the concept of sustainable architecture, utilizing eco-friendly materials and energy-efficient designs. The result is a home that not only minimizes its environmental impact but also provides a healthy and comfortable living space.",
-      "This project features innovative solutions such as solar panels, rainwater harvesting systems, and natural ventilation, all integrated into a modern design. The layout promotes a harmonious relationship between indoor and outdoor spaces, enhancing the overall living experience.",
-      "Project Gamma stands as a testament to the possibilities of sustainable living, demonstrating that modern homes can be both environmentally responsible and aesthetically pleasing. Its design reflects a commitment to sustainability while providing a functional and inviting atmosphere for its residents."
+      "Project Gamma explores the concept of sustainable architecture through innovative design choices. Solar power integration, rainwater harvesting, and energy-efficient insulation make it a model for eco-friendly residential development in growing cities.",
+      "The spaces within Gamma are designed to promote wellness and environmental responsibility. Natural ventilation, minimal waste materials, and green roofs combine aesthetics with a strong ecological message.",
+      "This project stands as a testament to the possibilities of sustainable living. It’s a blueprint for a greener future, demonstrating that environmental consciousness and beautiful design can coexist seamlessly."
+    ],
+    testimonials: [
+      "“We wanted a sustainable, smart design — they delivered beyond expectations.” — GreenBuild Co."
     ]
   },
   {
@@ -49,11 +65,16 @@ const projects = [
     subtitle: "Minimalist Elegance",
     thumbnail: houseImage4,
     images: [houseImage4, houseImage1, houseImage2],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-07-10",
+    location: "Eldoret, Kenya",
+    clientName: "Delta Homes",
     description: [
-      "Project Delta embraces minimalist design principles, creating a space where simplicity and sophistication coexist. Clean lines, open layouts, and carefully chosen finishes create an elegant yet practical living environment. Every detail is intentional, resulting in a harmonious atmosphere that celebrates modern architecture.",
-      "Natural light is at the core of Project Delta’s design philosophy. Large windows and strategic openings ensure that every room feels bright and airy. The interior spaces are crafted to promote calm and relaxation, offering a refreshing escape from the fast pace of daily life.",
-      "Project Delta demonstrates how minimalism can elevate modern living. By focusing on essential elements and removing unnecessary clutter, the design emphasizes spaciousness and tranquility. It’s a perfect choice for those who value timeless style and functional beauty in their homes."
+      "Project Delta embraces minimalist design principles. Its layout focuses on open spaces, soft neutral tones, and carefully chosen textures that inspire a sense of calm and balance throughout the home.",
+      "Natural light is at the core of Project Delta’s design philosophy. Large, strategically placed windows allow sunlight to flow through, creating a warm and inviting atmosphere in every room.",
+      "Project Delta demonstrates how minimalism can elevate modern living, offering a space that is elegant, uncluttered, and beautifully functional."
+    ],
+    testimonials: [
+      "“The simplicity and elegance of Project Delta made our dream home come true.” — Delta Homes"
     ]
   },
   {
@@ -62,180 +83,166 @@ const projects = [
     subtitle: "Light and Air",
     thumbnail: houseImage1,
     images: [houseImage1, houseImage3, houseImage2],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-06-18",
+    location: "Mombasa, Kenya",
+    clientName: "Epsilon Holdings",
     description: [
-      "Project Epsilon is designed to celebrate the beauty of natural light and fresh air. Its open-plan architecture invites the outdoors inside, creating bright, breezy living spaces that inspire comfort and wellness. The home’s orientation maximizes daylight while maintaining a sense of privacy and calm.",
-      "The use of large glass panels and thoughtful ventilation ensures that Project Epsilon maintains a refreshing indoor atmosphere throughout the day. Each space is carefully designed to enhance airflow, creating an environment that feels alive and connected to nature.",
-      "With Project Epsilon, the architectural focus is on creating a sanctuary that blends seamlessly with its surroundings. Its design elevates everyday living, combining energy efficiency, modern aesthetics, and the timeless appeal of well-lit, airy spaces."
+      "Project Epsilon is designed to celebrate the beauty of natural light. Its architecture features wide glass panels and open-plan spaces that blur the boundary between indoor and outdoor living.",
+      "The use of large windows and thoughtful ventilation ensures a naturally cool, bright environment throughout the day. Every space is optimized for relaxation and connectivity with nature.",
+      "Epsilon embodies a serene, breezy atmosphere that enhances modern coastal living. It’s ideal for families and individuals who value openness and tranquility."
+    ],
+    testimonials: [
+      "“Our home is full of natural light — exactly what we dreamed of.” — Epsilon Holdings"
     ]
   },
   {
     id: 6,
     title: "Project Zeta",
-    subtitle: "Smart Contemporary Living",
+    subtitle: "Coastal Harmony",
     thumbnail: houseImage2,
-    images: [houseImage2, houseImage4, houseImage1],
-    dateAdded: "2025-10-13",
+    images: [houseImage3, houseImage2, houseImage4],
+    dateAdded: "2025-06-01",
+    location: "Diani, Kenya",
+    clientName: "Zeta Resorts",
     description: [
-      "Project Zeta is a fusion of modern architecture and smart home technology. It delivers convenience, efficiency, and style in a single cohesive space. Thoughtful layouts, automated systems, and energy-efficient solutions make this home a model of future-ready living.",
-      "The clean, contemporary design of Project Zeta highlights functionality without sacrificing elegance. Each area flows seamlessly into the next, creating a dynamic space tailored for modern lifestyles. Integrated smart controls allow residents to personalize their environment with ease.",
-      "Project Zeta embodies the next generation of residential design. By integrating technology with timeless architecture, it offers a lifestyle defined by comfort, sophistication, and sustainable innovation."
+      "Zeta is a stunning coastal project designed to bring luxury and relaxation together. Inspired by ocean views and breezy living, it features a seamless blend of modern design and natural textures.",
+      "The architectural design embraces open spaces, shaded terraces, and a refreshing indoor-outdoor flow. It invites the ocean breeze into every corner, creating an uplifting retreat.",
+      "Zeta is not just a building but an experience, offering an unparalleled sense of harmony with its environment."
     ]
   },
   {
     id: 7,
     title: "Project Eta",
-    subtitle: "Tradition Meets Modernity",
+    subtitle: "Urban Escape",
     thumbnail: houseImage3,
-    images: [houseImage3, houseImage1, houseImage4],
-    dateAdded: "2025-10-13",
+    images: [houseImage1, houseImage4, houseImage2],
+    dateAdded: "2025-05-15",
+    location: "Thika, Kenya",
+    clientName: "Eta Real Estate",
     description: [
-      "Project Eta blends traditional architectural elements with modern design. The result is a timeless structure that feels both familiar and new. Natural materials and classic shapes are elevated by contemporary finishes, creating a home that honors heritage while embracing innovation.",
-      "Its spacious interiors reflect careful craftsmanship and attention to detail. Each room balances warmth and sophistication, offering residents a welcoming environment. Large openings and carefully framed views bring the outdoors inside.",
-      "Project Eta is ideal for those who appreciate cultural depth without compromising on modern comfort. It showcases how old and new can coexist beautifully within one design vision."
+      "Eta offers an urban retreat within a vibrant city. Its design focuses on peaceful interiors, green courtyards, and privacy-enhancing layouts.",
+      "Natural elements and elegant finishes balance urban energy with personal tranquility. The spaces are ideal for professionals seeking calm without leaving the city.",
+      "Eta blends smart city living with comfort, setting a new standard for urban residential projects."
     ]
   },
   {
     id: 8,
     title: "Project Theta",
-    subtitle: "Eco-Landscaped Haven",
+    subtitle: "Cultural Fusion",
     thumbnail: houseImage4,
-    images: [houseImage4, houseImage2, houseImage3],
-    dateAdded: "2025-10-13",
+    images: [houseImage2, houseImage3, houseImage1],
+    dateAdded: "2025-05-01",
+    location: "Machakos, Kenya",
+    clientName: "Theta Collective",
     description: [
-      "Project Theta emphasizes harmony with the natural landscape. Its eco-conscious design integrates greenery, sustainable materials, and open spaces to create a serene living environment. This project prioritizes the connection between the built environment and the surrounding ecosystem.",
-      "The architectural layout enhances cross-ventilation and natural lighting, reducing the need for artificial energy sources. Outdoor gardens and green roofs provide cooling effects, promoting a comfortable climate indoors year-round.",
-      "Project Theta stands as a model of environmentally friendly living. By blending architecture with landscape, it offers residents a tranquil, nature-infused lifestyle that prioritizes sustainability without compromising modern luxury."
+      "Theta celebrates the fusion of modern design with traditional Kenyan elements. It features warm earthy tones, handcrafted details, and sustainable materials.",
+      "The structure honors cultural roots while integrating advanced building techniques. It stands as a statement of pride and identity.",
+      "Theta demonstrates how architecture can preserve heritage while embracing innovation."
     ]
   },
   {
     id: 9,
     title: "Project Iota",
-    subtitle: "Luxury in Detail",
+    subtitle: "Smart Living",
     thumbnail: houseImage1,
-    images: [houseImage1, houseImage3, houseImage4],
-    dateAdded: "2025-10-13",
+    images: [houseImage4, houseImage1, houseImage3],
+    dateAdded: "2025-04-22",
+    location: "Kajiado, Kenya",
+    clientName: "Iota Properties",
     description: [
-      "Project Iota embodies refined luxury through meticulous attention to detail. From premium finishes to elegant layouts, this project is crafted to provide an elevated living experience. Every corner reflects thoughtful design and sophisticated craftsmanship.",
-      "Natural textures, soft lighting, and curated spaces create a sense of quiet opulence. The interiors are both functional and indulgent, offering comfort without excess. This design celebrates quality over quantity.",
-      "Project Iota redefines modern luxury by focusing on timeless elegance. Its architectural style offers a balance between grandeur and intimacy, making it a perfect sanctuary for contemporary living."
+      "Iota integrates smart technology into every corner of its design. Lighting, security, and climate control systems work seamlessly for maximum comfort.",
+      "The building combines modern aesthetics with intelligent infrastructure, ensuring energy efficiency and effortless living.",
+      "Iota represents the future of residential architecture — adaptive, elegant, and connected."
     ]
   },
   {
     id: 10,
     title: "Project Kappa",
-    subtitle: "Indoor-Outdoor Harmony",
+    subtitle: "Green Heart",
     thumbnail: houseImage2,
-    images: [houseImage2, houseImage4, houseImage1],
-    dateAdded: "2025-10-13",
+    images: [houseImage2, houseImage3, houseImage1],
+    dateAdded: "2025-04-01",
+    location: "Nyeri, Kenya",
+    clientName: "Kappa Developments",
     description: [
-      "Project Kappa seamlessly merges indoor and outdoor living. Its open design and strategic use of glass create uninterrupted visual and physical connections with nature. This project offers residents an experience that feels spacious, fresh, and serene.",
-      "The structure is designed to maximize airflow and daylight, fostering a healthy, vibrant environment. Outdoor decks, courtyards, and gardens complement the interior spaces, enhancing the overall living quality.",
-      "Project Kappa embodies the modern lifestyle where boundaries between inside and outside dissolve. It delivers comfort, functionality, and natural beauty in a single cohesive design."
+      "Kappa is inspired by lush greenery and ecological responsibility. Vertical gardens and natural finishes create a refreshing ambiance.",
+      "The design integrates green technologies to reduce environmental impact, proving that luxury and sustainability can coexist beautifully.",
+      "Kappa sets a new benchmark for eco-friendly architecture in residential spaces."
     ]
   },
   {
     id: 11,
     title: "Project Lambda",
-    subtitle: "Material Innovation",
+    subtitle: "Quiet Corners",
     thumbnail: houseImage3,
     images: [houseImage3, houseImage1, houseImage4],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-03-18",
+    location: "Naivasha, Kenya",
+    clientName: "Lambda Living",
     description: [
-      "Project Lambda pushes the boundaries of architectural materials. It combines innovative construction techniques with modern design principles to create a striking visual identity. Every surface and structure is thoughtfully chosen to enhance both aesthetics and performance.",
-      "The project integrates texture, color, and form to create a space that is as functional as it is beautiful. Natural and modern materials blend seamlessly, achieving a harmonious balance.",
-      "Project Lambda serves as a statement of bold design. It showcases how material innovation can elevate architectural expression while maintaining comfort and sustainability."
+      "Lambda creates cozy private spaces where families can thrive. Its simple, elegant design emphasizes intimacy and warmth.",
+      "Every room opens to quiet green spaces, making it ideal for calm living environments.",
+      "Lambda is about more than architecture — it’s about building a sense of home."
     ]
   },
   {
     id: 12,
     title: "Project Mu",
-    subtitle: "Functional Comfort",
+    subtitle: "Community Spirit",
     thumbnail: houseImage4,
-    images: [houseImage4, houseImage2, houseImage3],
-    dateAdded: "2025-10-13",
+    images: [houseImage1, houseImage2, houseImage3],
+    dateAdded: "2025-03-02",
+    location: "Kakamega, Kenya",
+    clientName: "Mu Estate",
     description: [
-      "Project Mu is designed to adapt to the needs of modern living. Its focus on functional comfort ensures that every space has a purpose, creating a home that is as practical as it is beautiful.",
-      "Open floor plans, natural lighting, and ergonomic design solutions make Project Mu ideal for contemporary families. It prioritizes ease of living while maintaining elegant architectural integrity.",
-      "Project Mu reflects a commitment to intelligent design. It demonstrates that homes can be both comfortable and inspiring, combining functionality with modern style."
+      "Mu focuses on community living. Shared spaces, open courtyards, and walking paths foster social connection and belonging.",
+      "Its design encourages sustainable living while creating opportunities for neighbors to interact naturally.",
+      "Mu demonstrates how thoughtful planning can shape connected, happy communities."
     ]
   },
   {
     id: 13,
     title: "Project Nu",
-    subtitle: "Smart Energy Home",
+    subtitle: "Luxury and Light",
     thumbnail: houseImage1,
-    images: [houseImage1, houseImage3, houseImage4],
-    dateAdded: "2025-10-13",
+    images: [houseImage2, houseImage4, houseImage3],
+    dateAdded: "2025-02-21",
+    location: "Karen, Nairobi",
+    clientName: "Nu Homes",
     description: [
-      "Project Nu integrates smart energy solutions into modern residential design. Solar power, efficient insulation, and intelligent energy management make this home a model of sustainability and innovation.",
-      "Its sleek exterior and practical interior layout reflect a balance between eco-consciousness and contemporary comfort. Every design decision contributes to energy efficiency without compromising aesthetics.",
-      "Project Nu demonstrates how architecture can lead the way in sustainable living. It’s a home built for the future—efficient, elegant, and environmentally responsible."
+      "Nu offers a luxurious living experience with a design that celebrates natural light and space.",
+      "Every finish and fixture has been carefully selected to achieve a modern and timeless look.",
+      "Nu stands as a testament to architectural excellence and refined living."
     ]
   },
   {
     id: 14,
     title: "Project Xi",
-    subtitle: "Versatile Spaces",
+    subtitle: "Urban Village",
     thumbnail: houseImage2,
-    images: [houseImage2, houseImage1, houseImage3],
-    dateAdded: "2025-10-13",
+    images: [houseImage3, houseImage1, houseImage4],
+    dateAdded: "2025-02-05",
+    location: "Ruiru, Kenya",
+    clientName: "Xi Developers",
     description: [
-      "Project Xi is a celebration of versatility in architecture. Its flexible layouts can adapt to different lifestyles, making it an ideal choice for evolving modern families. Open spaces and modular design enhance both comfort and functionality.",
-      "Natural lighting and neutral tones create an inviting atmosphere, while thoughtful zoning ensures privacy and flow. The project is designed to evolve with its occupants.",
-      "Project Xi proves that adaptable spaces can be both beautiful and practical, offering long-term value and timeless style in a single design."
+      "Xi combines the comfort of village living with the convenience of the city. Green paths and shared amenities promote a strong community feel.",
+      "The design is warm, accessible, and modern, perfect for young families and professionals.",
+      "Xi reimagines urban neighborhoods as spaces for connection and growth."
     ]
   },
   {
     id: 15,
     title: "Project Omicron",
-    subtitle: "Elegant Responsibility",
+    subtitle: "Elevated Living",
     thumbnail: houseImage3,
-    images: [houseImage3, houseImage4, houseImage1],
-    dateAdded: "2025-10-13",
-    description: [
-      "Project Omicron embodies elegance and environmental responsibility. Its modern lines and eco-friendly features showcase how luxury can coexist with sustainability. Each element is carefully selected to reduce impact while maximizing comfort.",
-      "A thoughtful balance of textures, light, and space creates a serene atmosphere. The home invites both relaxation and inspiration, setting a new standard for modern living.",
-      "Project Omicron is more than a building—it’s a statement of conscious architecture. It reflects how beauty, functionality, and responsibility can align seamlessly."
-    ]
-  },
-  {
-    id: 16,
-    title: "Project Pi",
-    subtitle: "Geometry and Light",
-    thumbnail: houseImage4,
-    images: [houseImage4, houseImage2, houseImage3],
-    dateAdded: "2025-10-13",
-    description: [
-      "Project Pi explores the interplay between geometric forms and natural light. Its bold structure is softened by warm interior spaces, creating a dynamic yet harmonious design. The building feels sculptural and inviting.",
-      "Daylight penetrates deep into the living spaces, highlighting architectural details and enhancing the sense of openness. Each element contributes to a balanced composition.",
-      "Project Pi celebrates form and function working in perfect harmony. Its design inspires creativity and offers residents a space that is both visually stunning and comfortable."
-    ]
-  },
-  {
-    id: 17,
-    title: "Project Rho",
-    subtitle: "The Green Roof Residence",
-    thumbnail: houseImage1,
     images: [houseImage1, houseImage2, houseImage4],
-    dateAdded: "2025-10-13",
+    dateAdded: "2025-01-20",
+    location: "Kitale, Kenya",
+    clientName: "Omicron Estates",
     description: [
-      "Project Rho stands out with its lush green roofs and eco-conscious design. By integrating nature directly into the structure, it provides natural insulation, reduced energy costs, and a serene aesthetic.",
-      "The living spaces flow seamlessly into rooftop gardens and terraces, creating a continuous connection with greenery. Natural ventilation and daylight define the interior ambiance.",
-      "Project Rho illustrates how architecture and landscape can merge into one harmonious experience. It’s a model of urban sustainability and modern comfort."
-    ]
-  },
-  {
-    id: 18,
-    title: "Project Sigma",
-    subtitle: "Courtyard Sanctuary",
-    thumbnail: houseImage2,
-    images: [houseImage2, houseImage3, houseImage1],
-    dateAdded: "2025-10-13",
-    description: [
-      "Project Sigma centers around an inner courtyard, creating a peaceful retreat from the outside world. This classic architectural concept is reimagined with modern aesthetics to offer privacy, light, and a unique spatial flow.",
-      "Each room opens toward the courtyard, encouraging natural ventilation and fostering a sense of community within the home. The design emphasizes openness and tranquility.",
-      "Project Sigma merges traditional charm with contemporary minimalism, offering residents a serene environment designed for both reflection and connection."
+      "Omicron rises with bold architectural lines and a commanding presence. Its design elevates everyday living to a new level.",
+      "The structure blends elegance and function, offering modern comforts in a beautifully crafted space.",
+      "Omicron is more than a home — it’s a lifestyle statement."
     ]
   }
 ];

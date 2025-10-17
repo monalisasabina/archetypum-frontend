@@ -34,7 +34,7 @@ const Projects = () => {
                   navigation
                   pagination={{ clickable: true }}
                   spaceBetween={30}
-                  slidesPerView={1}
+                  slidesPerView={3}
                >
                {recentProjects.map((project) => (
                      <SwiperSlide key={project.id}>

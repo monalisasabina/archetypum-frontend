@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import projectList from "../Components/projectList"
+import "./ProjectPage.css";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -25,7 +26,7 @@ const ProjectsPage = () => {
                  <p>{project.subtitle}</p>
             </div>
 
-          
+
             {/* Project images */}
             <div className="project-page-images">
                 <Swiper
@@ -53,6 +54,26 @@ const ProjectsPage = () => {
             {project.description.map((para,idx) =>(
                 <p key={idx}>{para}</p>
             ))}
+
+
+            {/* Project Testimonials */}
+             {project.testimonials && (
+                <div className="projects-testimonial">
+                    <h3>What our clients say:</h3>
+
+                    {project.testimonials.map((testimonial, idx) => (
+                        <blockquote key={idx}>"{testimonial}"</blockquote>
+                    ))}
+                    <footer>- {project.clientName}</footer>
+                </div>
+            )}
+                
+            {/* Project Meta Information */}
+            <div className="project-page-meta">
+                <p>Client: {project.clientName}</p>
+                <p>Location: {project.location}</p>
+                <p>Date: {project.dateAdded}</p>
+            </div>
 
         </div>
     );
