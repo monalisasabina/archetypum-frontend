@@ -6,7 +6,7 @@
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-}
+
 
 /* 🏗️ Header */
 .project-page-header {
@@ -21,9 +21,11 @@
   margin-bottom: 0.5rem;
 }
 
-.project-page-header p {
+.project-page-cont .project-page-header p {
   font-size: 1.2rem;
   color: #555;
+  margin: auto;
+  text-align: center;
 }
 
 /* 🖼️ Swiper Images */
@@ -38,12 +40,13 @@
 }
 
 .project-page-image {
-  width: 900px;
-  height: 400px;
+  width: 1000px;
+  height: 350px;
   object-fit: cover;
   display: block;
-  
-  
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 /* 📝 Description Paragraphs */
@@ -56,6 +59,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
+  
 }
 
 /* 💬 Testimonials */
@@ -103,6 +107,7 @@
 .project-page-meta p {
   margin: 0;
   font-size: 1rem;
+  color: #fff;
 }
 
 /* 🪄 Swiper Navigation Customization */

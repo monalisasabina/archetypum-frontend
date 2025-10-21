@@ -22,6 +22,8 @@ const Projects = () => {
 
     return (
         <div className="projects-container">
+
+            {/* Header */}
             <div className="projects-header">
                 <h1>Projects</h1>
                 <p>Here you can find a list of our projects.</p>

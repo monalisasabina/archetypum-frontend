@@ -50,12 +50,14 @@ const ProjectsPage = () => {
                 </Swiper>
             </div>
 
+        
             {/* Project Description in separate paragraphs */}
-            {project.description.map((para,idx) =>(
+            <div className="projects-page-description">
+                {project.description.map((para,idx) =>(
                 <p key={idx}>{para}</p>
-            ))}
-
-
+              ))}
+            </div>
+            
             {/* Project Testimonials */}
              {project.testimonials && (
                 <div className="projects-testimonial">
