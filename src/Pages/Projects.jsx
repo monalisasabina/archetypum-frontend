@@ -36,12 +36,12 @@ const Projects = () => {
                   navigation
                   pagination={{ clickable: true }}
                   spaceBetween={30}
-                  slidesPerView={3}
+                  slidesPerView={2}
                >
                {recentProjects.map((project) => (
                      <SwiperSlide key={project.id}>
                          <div className="project-card">
-                            <h2>{project.title}</h2>
+                            
                             <div className="project-thumbnail">
                                 <img
                                     src={project.thumbnail}
@@ -49,13 +49,19 @@ const Projects = () => {
                                 />
                                 
                             </div>
-                            <p className="project-subtitle">{project.subtitle}</p>
+                             
+                            <div className="project-card-content">
 
-                            {/* Read More Button */}
-                            <Link to={`/projects/${project.id}`} className="project-link">
-                                <button className="project-button">Read More</button>
-                            </Link>
+                                <h2>{project.title}</h2>
+                                <p className="project-subtitle">{project.subtitle}</p>
 
+                                {/* Read More Button */}
+                                <Link to={`/projects/${project.id}`} className="project-link">
+                                    <button className="project-button">Uncover More</button>
+                                </Link>
+
+                            </div>
+                        
                         </div>
                     </SwiperSlide>
                 ))}
