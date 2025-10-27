@@ -13,12 +13,15 @@ const Projects = () => {
 
     // Sort projects by date
     const sortedProjects = [
-        ...projects.sort((a, b) => new Date(b.date) - new Date(a.date))
+        ...projects.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
     ]
     
     // Project functions
-    const recentProjects = sortedProjects.slice(0, 5); // Get the first 5 projects
-    const otherProjects = sortedProjects.slice(5); // Get the remaining projects
+      // Recent projects
+      const recentProjects = sortedProjects.slice(0, 3); 
+
+        // Other projects
+      const otherProjects = sortedProjects.slice(3); // Get the remaining projects
 
     return (
         <div className="projects-container">
@@ -30,42 +33,55 @@ const Projects = () => {
             </div>
 
             {/* RECENT PROJECTS */}
-            <h2 className="section-title">Recent Projects</h2>
-            <Swiper
-                  modules={[Navigation, Pagination]}
-                  navigation
-                  pagination={{ clickable: true }}
-                  spaceBetween={30}
-                  slidesPerView={2}
-               >
-               {recentProjects.map((project) => (
+            <div className="recent-projects">
+
+              <h2 className="section-title">Recent Projects</h2>
+             
+
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation
+                    pagination={{ clickable: true }}
+                    spaceBetween={30}
+                    slidesPerView={2}
+                  >
+                  {recentProjects.map((project) => (
                      <SwiperSlide key={project.id}>
-                         <div className="project-card">
-                            
-                            <div className="project-thumbnail">
+
+                         <Link to={`/projects/${project.id}`} className="all-projects-link">
+                           <div className="project-card">
+
+                              {/* Project Thumbnail */}
+                              <div className="project-thumbnail">
                                 <img
                                     src={project.thumbnail}
                                     alt={`${project.title} Thumbnail`}
                                 />
                                 
-                            </div>
-                             
-                            <div className="project-card-content">
+                              </div>
+
+                               {/* Project Content */}
+                              <div className="project-card-content">
 
                                 <h2>{project.title}</h2>
                                 <p className="project-subtitle">{project.subtitle}</p>
 
                                 {/* Read More Button */}
-                                <Link to={`/projects/${project.id}`} className="project-link">
+                                {/* <Link to={`/projects/${project.id}`} className="project-link">
                                     <button className="project-button">Uncover More</button>
-                                </Link>
+                                </Link> */}
 
-                            </div>
+                               </div>
                         
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                            </div>
+                        </Link> 
+                     </SwiperSlide>
+                   ))}
+                 </Swiper>
+          
+            </div>
+            
+            
 
             {/* OTHER PROJECTS */}
             {otherProjects.length > 0 && (
@@ -77,15 +93,17 @@ const Projects = () => {
                             <Link to={`/projects/${project.id}`} key={project.id} className="project-other-card-link">
 
                                <div key={project.id} className="project-other-card">
-                                  <h2>{project.title}</h2>
+
+                                  {/* Thumbnail */}
                                   <div className="project-other-thumbnails">
 
                                      <img
                                         src={project.thumbnail}
                                         alt={`${project.title} Thumbnail`}
                                      />
-                                
+            
                                   </div>
+                                  <h2>{project.title}</h2>
                                   <p className="project-other-subtitle">{project.subtitle}</p>
                               </div>
                             </Link>

@@ -7,7 +7,8 @@
     padding: 40px 20px;
     background-color: #ffffff; /* White background */
     color: #333; /* Dark text for readability */
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Manrope", sans-serif;
 }
 
 /* Header section */
@@ -17,7 +18,7 @@
 }
 
 .projects-header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #0081c9; /* Accent color */
     margin-bottom: 10px;
 }
@@ -30,16 +31,23 @@
 /* Section titles */
 .section-title {
     color: #0081c9;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 30px 0 15px;
     text-align: center;
 }
 
 /* Swiper Project Cards */
+.recent-projects{
+    margin-bottom: 20px;
+}
 .swiper-slide {
     display: flex;
     justify-content: center;
-   
+}
+
+.all-projects-link{
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card {
@@ -50,9 +58,9 @@
      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
      max-width: 800px;
      width: 100%;
-    margin: 20px;
-    border: 1px solid #c8e1f2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     margin: 20px;
+     border: 1px solid #c8e1f2;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
 
@@ -82,7 +90,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center
 }
 
 .project-card-content h2{
@@ -108,6 +116,7 @@
     cursor: pointer;
     width: fit-content;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    align-items: center;
 }
 
 .project-button:hover {
@@ -137,7 +146,6 @@
   }
 }
 
-
 /* Grid for Other Projects */
 .projects-grid {
     display: grid;
@@ -145,24 +153,44 @@
     gap: 30px;
     margin-top: 20px;
 }
+
 /* Other projects card */
 .project-other-card{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid grey;
+
   border-radius: 5px;
   padding: 10px;
+   border: 1px solid #eee;
+}
+
+.project-other-card-link{
+    text-decoration: none;
 }
 
 .project-other-card h2{
     text-align: center;
     color: #0081c9;
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
 .project-other-card:hover {
     transform: scale(1.05);
 }
 
+.project-other-card p{
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+}
+
+.project-other-thumbnails img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
 /* Swiper Navigation Arrows */
 /* .swiper-button-next,
