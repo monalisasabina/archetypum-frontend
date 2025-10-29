@@ -4,11 +4,10 @@
 .projects-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
     background-color: #ffffff; /* White background */
     color: #333; /* Dark text for readability */
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: "Manrope", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Manrope", sans-serif; */
 }
 
 /* Header section */

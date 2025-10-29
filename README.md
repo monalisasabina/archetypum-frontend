@@ -36,10 +36,18 @@ To start the server
    
    ```bash
    npm run dev
-   ```
 
+   ```
 
 By default, you will use the link below to open the website locally:
 
     http://localhost:5173/
+
+
+### 5. Figma
+
+Here are some figma designs used on this projects
+
+   https://www.figma.com/design/NOzO1PAb342G89AaZiTBqU/Archetypum?t=mGd7VlG4odc4B6pd-1
+
     

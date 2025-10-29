@@ -6,15 +6,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Link } from "react-router-dom";
 
 const Projects = () => {
 
     // Sort projects by date
     const sortedProjects = [
-        ...projects.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
-    ]
+        ...projects].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+    
     
     // Project functions
       // Recent projects
@@ -39,11 +39,19 @@ const Projects = () => {
              
 
                 <Swiper
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation, Pagination, Autoplay]}
                     navigation
                     pagination={{ clickable: true }}
                     spaceBetween={30}
                     slidesPerView={2}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                        640: {slidesPerView:1},
+                        1024: {slidesPerView:2}
+                    }}
                   >
                   {recentProjects.map((project) => (
                      <SwiperSlide key={project.id}>
