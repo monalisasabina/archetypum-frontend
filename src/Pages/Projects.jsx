@@ -35,22 +35,23 @@ const Projects = () => {
             {/* RECENT PROJECTS */}
             <div className="recent-projects">
 
-              <h2 className="section-title">Recent Projects</h2>
+                <h2 className="section-title">Recent Projects</h2>
              
 
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
                     pagination={{ clickable: true }}
-                    spaceBetween={30}
+                    spaceBetween={10}
                     slidesPerView={2}
                     autoplay={{
-                        delay: 4000,
+                        delay: 4000,   //4 seconds between slides
                         disableOnInteraction: false,
                     }}
                     breakpoints={{
-                        640: {slidesPerView:1},
-                        1024: {slidesPerView:2}
+                        0: {slidesPerView:1},   //mobile
+                        768: {slidesPerView:2},   //large tablets
+                        1024: {slidesPerView:2}   //desktop
                     }}
                   >
                   {recentProjects.map((project) => (
@@ -95,6 +96,9 @@ const Projects = () => {
             {otherProjects.length > 0 && (
                 <div>
                     <h2 className="section-other-title">Other Projects</h2>
+
+                    <p>Discover more spaces we have transformed through design and innovation.</p>
+
                     <div className="projects-grid">
                         {otherProjects.map((project) => (
 
