@@ -17,19 +17,24 @@ const Projects = () => {
     
     
     // Project functions
-      // Recent projects
-      const recentProjects = sortedProjects.slice(0, 3); 
+        // Recent projects
+        const recentProjects = sortedProjects.slice(0, 3); 
 
         // Other projects
-      const otherProjects = sortedProjects.slice(3); // Get the remaining projects
+        const otherProjects = sortedProjects.slice(3); // Get the remaining projects
+
+    // Capitalize category names
+    const capitalizeCategory = (category) => {
+        return category ? category.toUpperCase() : "";
+    };
 
     return (
         <div className="projects-container">
 
             {/* Header */}
             <div className="projects-header">
-                <h1>Projects</h1>
-                <p>Here you can find a list of our projects.</p>
+                <h1>Explore Our Work</h1>
+                <p>An overview of completed developments demonstrating our capability in delivering functional, innovative, and high-quality architectural solutions.</p>
             </div>
 
             {/* RECENT PROJECTS */}
@@ -37,7 +42,6 @@ const Projects = () => {
 
                 <h2 className="section-title">Recent Projects</h2>
              
-
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
@@ -115,6 +119,7 @@ const Projects = () => {
                                      />
             
                                   </div>
+                                  <span className="project-category">{capitalizeCategory(project.category)}</span>
                                   <h2>{project.title}</h2>
                                   <p className="project-other-subtitle">{project.subtitle}</p>
                               </div>

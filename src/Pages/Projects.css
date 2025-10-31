@@ -2,11 +2,10 @@
 
 /* Overall container */
 .projects-container {
-    max-width: 1250px;
-    margin: 0 auto;
-    background-color: #ffffff; 
+    background-color: #f5f5f5; 
     color: #333; 
     font-family: "Montserrat", sans-serif;
+    padding: 20px;
     /* font-family: "Manrope", sans-serif; */
 }
 
@@ -25,6 +24,7 @@
 .projects-header p {
     font-size: 1.2rem;
     color: #555;
+    text-align: left;
     
 }
 
@@ -65,7 +65,6 @@
 .swiper-pagination {
   bottom: 10px !important; /* increase or decrease distance below slides */
 }
-
 
 .all-projects-link{
     text-decoration: none;
@@ -179,10 +178,10 @@
 /* Other projects card */
 .project-other-card{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 10px;
-   border: 1px solid #eee;
+  border: 1px solid #eee;
+  background-color: #fff;
 }
 
 .project-other-card-link{
@@ -190,7 +189,7 @@
 }
 
 .project-other-card h2{
-    text-align: center;
+    text-align: left;
     color: #0081c9;
     transition: transform 0.3s ease;
     text-decoration: none;
@@ -198,12 +197,22 @@
 
 .project-other-card:hover {
     transform: scale(1.05);
+    border: 1px solid #0081c9;
 }
 
 .project-other-card p{
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: #555;
+}
+
+.project-category{
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #c9ad00;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .project-other-thumbnails img{

@@ -13,6 +13,7 @@ const projects = [
     dateAdded: "2025-10-13",
     location: "Nairobi, Kenya",
     clientName: "John Mwangi",
+    category: "Residential",
     description: [
       "Project Alpha represents a bold step toward modern residential architecture. Its sleek geometry and clean lines are paired with functional interior layouts that maximize light and space. Each room flows seamlessly, creating an environment where beauty meets practicality for a sophisticated, contemporary living experience.",
       "With Project Alpha, innovation is brought to life through balanced proportions and smart design solutions. The exterior’s modern aesthetic complements spacious interiors designed for comfort and creativity. Large windows invite natural light, while open layouts ensure both elegance and functionality in every corner of this visionary home.",
@@ -32,6 +33,7 @@ const projects = [
     dateAdded: "2025-09-21",
     location: "Kisumu, Kenya",
     clientName: "Urban Edge Ltd.",
+    category: "Commercial",
     description: [
       "Project Beta redefines urban living with its innovative design and functional spaces. The structure blends modern materials with sustainable techniques, creating a dynamic environment that supports both work and leisure. It brings a new level of sophistication and efficiency to the heart of the city’s growing skyline.",
       "The design of Project Beta emphasizes sustainability and energy efficiency. Carefully positioned openings and strategic insulation reduce energy usage without sacrificing comfort. It’s a symbol of what forward-thinking urban development can achieve while respecting environmental and community values.",
@@ -50,6 +52,7 @@ const projects = [
     dateAdded: "2025-08-30",
     location: "Nakuru, Kenya",
     clientName: "GreenBuild Co.",
+    category: "Residential",
     description: [
       "Project Gamma explores the concept of sustainable architecture through innovative design choices. Solar power integration, rainwater harvesting, and energy-efficient insulation make it a model for eco-friendly residential development in growing cities.",
       "The spaces within Gamma are designed to promote wellness and environmental responsibility. Natural ventilation, minimal waste materials, and green roofs combine aesthetics with a strong ecological message.",
@@ -68,6 +71,7 @@ const projects = [
     dateAdded: "2025-07-10",
     location: "Eldoret, Kenya",
     clientName: "Delta Homes",
+    category: "Residential",
     description: [
       "Project Delta embraces minimalist design principles. Its layout focuses on open spaces, soft neutral tones, and carefully chosen textures that inspire a sense of calm and balance throughout the home.",
       "Natural light is at the core of Project Delta’s design philosophy. Large, strategically placed windows allow sunlight to flow through, creating a warm and inviting atmosphere in every room.",
@@ -86,6 +90,7 @@ const projects = [
     dateAdded: "2025-06-18",
     location: "Mombasa, Kenya",
     clientName: "Epsilon Holdings",
+    category: "Residential",
     description: [
       "Project Epsilon is designed to celebrate the beauty of natural light. Its architecture features wide glass panels and open-plan spaces that blur the boundary between indoor and outdoor living.",
       "The use of large windows and thoughtful ventilation ensures a naturally cool, bright environment throughout the day. Every space is optimized for relaxation and connectivity with nature.",
@@ -104,6 +109,7 @@ const projects = [
     dateAdded: "2025-06-01",
     location: "Diani, Kenya",
     clientName: "Zeta Resorts",
+    category: "Resort",
     description: [
       "Zeta is a stunning coastal project designed to bring luxury and relaxation together. Inspired by ocean views and breezy living, it features a seamless blend of modern design and natural textures.",
       "The architectural design embraces open spaces, shaded terraces, and a refreshing indoor-outdoor flow. It invites the ocean breeze into every corner, creating an uplifting retreat.",
@@ -119,6 +125,7 @@ const projects = [
     dateAdded: "2025-05-15",
     location: "Thika, Kenya",
     clientName: "Eta Real Estate",
+    category: "Residential",
     description: [
       "Eta offers an urban retreat within a vibrant city. Its design focuses on peaceful interiors, green courtyards, and privacy-enhancing layouts.",
       "Natural elements and elegant finishes balance urban energy with personal tranquility. The spaces are ideal for professionals seeking calm without leaving the city.",
@@ -134,6 +141,7 @@ const projects = [
     dateAdded: "2025-05-01",
     location: "Machakos, Kenya",
     clientName: "Theta Collective",
+    category: "Cultural",
     description: [
       "Theta celebrates the fusion of modern design with traditional Kenyan elements. It features warm earthy tones, handcrafted details, and sustainable materials.",
       "The structure honors cultural roots while integrating advanced building techniques. It stands as a statement of pride and identity.",
@@ -149,6 +157,7 @@ const projects = [
     dateAdded: "2025-04-22",
     location: "Kajiado, Kenya",
     clientName: "Iota Properties",
+    category: "Smart Home",
     description: [
       "Iota integrates smart technology into every corner of its design. Lighting, security, and climate control systems work seamlessly for maximum comfort.",
       "The building combines modern aesthetics with intelligent infrastructure, ensuring energy efficiency and effortless living.",
@@ -164,6 +173,7 @@ const projects = [
     dateAdded: "2025-04-01",
     location: "Nyeri, Kenya",
     clientName: "Kappa Developments",
+    category: "Eco-Friendly",
     description: [
       "Kappa is inspired by lush greenery and ecological responsibility. Vertical gardens and natural finishes create a refreshing ambiance.",
       "The design integrates green technologies to reduce environmental impact, proving that luxury and sustainability can coexist beautifully.",
@@ -179,6 +189,10 @@ const projects = [
     dateAdded: "2025-03-18",
     location: "Naivasha, Kenya",
     clientName: "Lambda Living",
+    category: "Residential",
+    testimonials: [
+      "“Lambda has transformed our family life. It’s a peaceful, beautiful home.” — Lambda Living"
+    ],
     description: [
       "Lambda creates cozy private spaces where families can thrive. Its simple, elegant design emphasizes intimacy and warmth.",
       "Every room opens to quiet green spaces, making it ideal for calm living environments.",
@@ -194,6 +208,7 @@ const projects = [
     dateAdded: "2025-03-02",
     location: "Kakamega, Kenya",
     clientName: "Mu Estate",
+    category: "Community Living",
     description: [
       "Mu focuses on community living. Shared spaces, open courtyards, and walking paths foster social connection and belonging.",
       "Its design encourages sustainable living while creating opportunities for neighbors to interact naturally.",
@@ -209,6 +224,10 @@ const projects = [
     dateAdded: "2025-02-21",
     location: "Karen, Nairobi",
     clientName: "Nu Homes",
+    category: "Luxury Residential",
+    testimonials: [
+      "“Nu is a masterpiece of modern architecture. Every detail is perfect.” — Nu Homes"
+    ],
     description: [
       "Nu offers a luxurious living experience with a design that celebrates natural light and space.",
       "Every finish and fixture has been carefully selected to achieve a modern and timeless look.",
@@ -224,6 +243,7 @@ const projects = [
     dateAdded: "2025-02-05",
     location: "Ruiru, Kenya",
     clientName: "Xi Developers",
+    category: "Community Living",
     description: [
       "Xi combines the comfort of village living with the convenience of the city. Green paths and shared amenities promote a strong community feel.",
       "The design is warm, accessible, and modern, perfect for young families and professionals.",
@@ -239,6 +259,10 @@ const projects = [
     dateAdded: "2025-01-20",
     location: "Kitale, Kenya",
     clientName: "Omicron Estates",
+    category: "Luxury Residential",
+    testimonials: [
+      "“Omicron is a statement of modern luxury. It’s everything we dreamed of and more.” — Omicron Estates"
+    ],
     description: [
       "Omicron rises with bold architectural lines and a commanding presence. Its design elevates everyday living to a new level.",
       "The structure blends elegance and function, offering modern comforts in a beautifully crafted space.",
