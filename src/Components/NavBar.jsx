@@ -9,8 +9,9 @@ const NavBar = () => {
     return (
         <nav className="navbar">
 
+            {/* Logo */}
             <div className="navbar-logo">
-                    <h2>Archetypum-Africa</h2>
+                    <NavLink to="/">Archetypum-Africa</NavLink>
             </div>
 
             {/* Hamburger Button */}

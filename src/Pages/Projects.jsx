@@ -46,7 +46,7 @@ const Projects = () => {
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
                     pagination={{ clickable: true }}
-                    spaceBetween={10}
+                    spaceBetween={5}
                     slidesPerView={2}
                     autoplay={{
                         delay: 4000,   //4 seconds between slides
@@ -77,7 +77,7 @@ const Projects = () => {
                               <div className="project-card-content">
 
                                 <h2>{project.title}</h2>
-                                <p className="project-subtitle">{project.subtitle}</p>
+                                <p className="project-subtitle">{project.location}</p>
 
                                 {/* Read More Button */}
                                 {/* <Link to={`/projects/${project.id}`} className="project-link">
@@ -121,7 +121,7 @@ const Projects = () => {
                                   </div>
                                   <span className="project-category">{capitalizeCategory(project.category)}</span>
                                   <h2>{project.title}</h2>
-                                  <p className="project-other-subtitle">{project.subtitle}</p>
+                                  <p className="project-other-subtitle">{project.location}</p>
                               </div>
                             </Link>
 

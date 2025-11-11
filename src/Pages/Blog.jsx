@@ -82,7 +82,6 @@ const Blog = () =>{
 
                             <div className="blog-content">
 
-
                                 {/* Blog Titles */}
                                 <p className="blog-category">{blog.category}</p>
                                 <h2>{blog.title}</h2>

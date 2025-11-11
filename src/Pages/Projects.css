@@ -24,7 +24,7 @@
 .projects-header p {
     font-size: 1.2rem;
     color: #555;
-    text-align: left;
+    text-align: center;
     
 }
 
@@ -58,7 +58,6 @@
 
 .recent-projects .swiper-button-next{
     right: -10px  !important;
-
 }
 
 /* Move Swiper pagination dots */
@@ -79,7 +78,7 @@
      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
      max-width: 570px;
      width: 100%;
-     margin: 20px;
+     margin: 40px;
      border: 1px solid #c8e1f2;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
   
