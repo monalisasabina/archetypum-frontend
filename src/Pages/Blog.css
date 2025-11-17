@@ -91,6 +91,10 @@
   padding: 1.2rem;
 }
 
+.blog-category{
+  color: #c9ad00;
+}
+
 .blog-content h2 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
@@ -123,6 +127,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-dark);
+  
 }
 
 /* Dates & Read Time */

@@ -186,13 +186,14 @@
 .project-other-card{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  padding: 10px;
+  padding: 0px;
   border: 1px solid #eee;
   background-color: #fff;
   height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  overflow: hidden;
 }
 
 .project-other-card-link{
@@ -211,10 +212,16 @@
     border: 1px solid #0081c9;
 }
 
+.project-other-info{
+    padding: 15px;
+    gap: 8px;
+    
+}
 .project-other-card p{
     text-align: left;
     text-decoration: none;
     color: #555;
+    
 }
 
 .project-category{
@@ -230,7 +237,7 @@
     width: 350px;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-bottom: 10px;
 }
 

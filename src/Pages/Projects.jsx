@@ -75,9 +75,14 @@ const Projects = () => {
                                      />
             
                                   </div>
-                                  <span className="project-category">{capitalizeCategory(project.category)}</span>
-                                  <h2>{project.title}</h2>
-                                  <p className="project-other-subtitle">{project.location}</p>
+
+                                  {/* Info */}
+                                  <div className="project-other-info">
+                                    <span className="project-category">{capitalizeCategory(project.category)}</span>
+                                    <h2>{project.title}</h2>
+                                    <p className="project-other-subtitle">{project.location}</p>
+                                  </div>
+                                  
                               </div>
                             </Link>
                         ))}
