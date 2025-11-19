@@ -72,6 +72,8 @@
   box-shadow: 0 4px 8px rgba(5, 4, 4, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-card:hover {
@@ -89,10 +91,14 @@
 /* Blog Content */
 .blog-content {
   padding: 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-category{
   color: #c9ad00;
+  font-weight: 600;
 }
 
 .blog-content h2 {
@@ -135,7 +141,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-bottom: 20px ;
 }
 
  .read-time {

@@ -44,6 +44,11 @@ const Blog = () =>{
 
     // __________________________________________________________
 
+    // Captilise all category names
+    const capitalizeCategory = (category) => {
+        return category ? category.toUpperCase() : "";
+    };
+
     return(
         <div className="blog-cont">
 
@@ -70,7 +75,8 @@ const Blog = () =>{
                 <div className="blog-card newsletter-card">
                     <NewsletterSignup />
                 </div>
-
+ 
+                {/* Blog Cards */}
                 {filteredBlogs.map((blog) => (
                     
                     <Link to={blog.link} key={blog.id} className="blog-card-link">
@@ -83,7 +89,7 @@ const Blog = () =>{
                             <div className="blog-content">
 
                                 {/* Blog Titles */}
-                                <p className="blog-category">{blog.category}</p>
+                                <p className="blog-category">{capitalizeCategory(blog.category)}</p>
                                 <h2>{blog.title}</h2>
                                 <p className="blog-subtitle">{blog.subtitle}</p>
                            
