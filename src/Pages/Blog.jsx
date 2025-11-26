@@ -10,6 +10,7 @@ console.log(blogList)
 const Blog = () =>{
 
     const [searchTerm, setSearchTerm] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("all");
 
 
     // __________________________________________________________
@@ -30,21 +31,36 @@ const Blog = () =>{
 
         return `${time} min read`
     };
+    
     // __________________________________________________________
+    // Filtering Blogs by Category
+    const categories = ["all", ...new Set(blogList.map((blog) => blog.category))];
 
+
+    // __________________________________________________________
     //Filter Blogs
     const filteredBlogs = blogList.filter((blog) => {
          
-        // Combine relevant fields into a single string for searching
-        const text =`${blog.title} ${blog.category} ${blog.author.name} ${blog.category}`.toLowerCase();
+        //Search Title and Author name
+        const matchesSearch = 
+            blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            blog.author.name.toLowerCase().includes(searchTerm.toLowerCase());
+
+        // Check if the blog matches the search term
+        if (!matchesSearch) {
+            return false;
+        }  
+
+        // Match Category
+        const matchesCategory = selectedCategory === "all" || blog.category === selectedCategory;
 
         // Check if the search term is included in the text
-        return text.includes(searchTerm.toLowerCase());
+        return matchesCategory && matchesSearch;
     });
 
     // __________________________________________________________
 
-    // Captilise all category names
+    // Capitalize all category names
     const capitalizeCategory = (category) => {
         return category ? category.toUpperCase() : "";
     };
@@ -57,15 +73,29 @@ const Blog = () =>{
                 <h1>Blog</h1>
             </div>
 
-            {/* Search Bar */}
-            <div className="blog-search">
+            {/* Blog Filters*/}
+            <div className="blog-filters">
                 <input
-                     type="search"
-                     placeholder="Search Category, Author or Blog"
-                     value={searchTerm}
-                     onChange={(e) => setSearchTerm(e.target.value)}
+                    type="text"
+                    placeholder="Search blogs..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
                 />
+
+                <select
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                >
+                     {categories.map((category, index) =>(
+                        <option key={index} value={category}>
+                            {category === "all" ? "All Categories" : capitalizeCategory(category)}
+                        </option>
+                     ))}
+
+                </select>
+
             </div>
+          
 
 
             {/* Blog Content */}
@@ -93,24 +123,21 @@ const Blog = () =>{
                                 <h2>{blog.title}</h2>
                                 <p className="blog-subtitle">{blog.subtitle}</p>
                            
-
+                               
                                 {/* Author Details */}
-                                <div className="blog-info">
-                                  <img
-                                     src={blog.author.profilePicture}
-                                     alt={blog.author.name}
-                                     className="author-pic"
-                                  />
-                                   <span>{blog.author.name}</span>
-                                </div>
+                                    <div className="blog-info">
+                                       <img
+                                           src={blog.author.profilePicture}
+                                           alt={blog.author.name}
+                                           className="author-pic"
+                                       />
+                                       <span className="author-name">{blog.author.name}</span>
 
-                                {/* Other Blog Content */}
-                                <div className="blog-meta">
+                                       <span className="dot-separator">•</span>
 
-                                    {/* <p className="blog-date">{blog.date}</p> */}
+                                       <span className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</span>
                                     
-                                    <span className="read-time"> <FcClock /> {calculateReadTime(blog.blogText)}</span>
-                                </div>
+                                 </div>
 
                             </div>
                         </div>
