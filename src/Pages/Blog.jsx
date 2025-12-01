@@ -34,11 +34,11 @@ const Blog = () => {
             blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             blog.author.name.toLowerCase().includes(searchTerm.toLowerCase());
 
-        const matchesCategory =
-            selectedCategories.length === 0 ||
-            selectedCategories.includes(blog.category);
+        // const matchesCategory =
+        //     selectedCategories.length === 0 ||
+        //     selectedCategories.includes(blog.category);
 
-        return matchesSearch && matchesCategory;
+        return matchesSearch;
     });
 
     // ________________________________________
