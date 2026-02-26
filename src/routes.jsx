@@ -30,7 +30,7 @@ const routes = [
      
       ]
     },
-
+    
     // Admin Routing
     {
         path: "/admin",

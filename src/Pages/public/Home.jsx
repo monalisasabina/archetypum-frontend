@@ -1,4 +1,4 @@
-import homePic from "../../Pictures/Modern Architecture Design in ARCHICAD.png"
+import homePic from "../../assets/Pictures/Modern Architecture Design in ARCHICAD.png"
 import "./Home.css"
 import { useNavigate } from "react-router-dom"
 

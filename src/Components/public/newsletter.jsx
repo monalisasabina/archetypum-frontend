@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./newsletter.css";
-import personNewsletter from "../../Pictures/Outdoor Reading Moment.png"
+import personNewsletter from "../../assets/Pictures/Outdoor Reading Moment.png"
 
 const NewsletterSignup = () => {
 

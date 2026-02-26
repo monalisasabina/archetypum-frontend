@@ -1,5 +1,5 @@
 import "./About.css"
-import architectureTeam from "../../Pictures/Diverse Team in Front of House.png"
+import architectureTeam from "../../assets/Pictures/Diverse Team in Front of House.png"
 
 function About(){
     return(
