@@ -6,6 +6,8 @@ const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
     return (
         <nav className="navbar">
 
@@ -28,8 +30,13 @@ const NavBar = () => {
                <NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink>
                <NavLink to="/blog"  onClick={() => setIsOpen(false)}>Blog</NavLink>
                <NavLink to="/contact_us" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
-               <NavLink to="/admin/dashboard" onClick={() => setIsOpen(false)}>Dashboard</NavLink>
+               
             </div>
+
+            {/* isLoggedIn indicator */}
+            {isLoggedIn && ( <NavLink to="/admin/dashboard" onClick={() => setIsOpen(false)}>Dashboard</NavLink>
+            )}
+            
         </nav>
     );
 };
