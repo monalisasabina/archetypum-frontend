@@ -8,6 +8,7 @@ import Blog from "./Pages/Blog";
 import BlogPage from "./Pages/BlogPage";
 import BlogForm from "./AdminPages/BlogForm";
 import ProjectsPage from "./Pages/ProjectsPage";
+import CreateBlog from "./Pages/CreateBlog";
 
 const routes = [
     {
@@ -46,8 +47,11 @@ const routes = [
         {
             path: "/blog-form",
             element: <BlogForm />
-
-        }
+        },
+        {
+            path:"create-blog",
+            element: <CreateBlog/>
+,       }
      
       ]
     },

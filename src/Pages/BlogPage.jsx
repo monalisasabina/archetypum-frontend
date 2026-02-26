@@ -11,6 +11,9 @@ const BlogPage = () => {
     // BlogId comes from the URL
     const {blogId} = useParams();
 
+    // useNavigate
+    const navigate = useNavigate();
+
     // Finds the Blog
     const blog = blogList.find(b => b.link.endsWith(blogId));
     if (!blog) return <p>Blog not found</p>;
@@ -32,8 +35,7 @@ const BlogPage = () => {
         return `${time} min read`
     };
 
-    // useNavigate
-    const navigate = useNavigate();
+   
 
     return(
         <div className="blog-full">

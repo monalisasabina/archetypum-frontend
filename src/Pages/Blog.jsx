@@ -3,7 +3,7 @@ import blogList from "../Components/blogList";
 import "./Blog.css";
 import { FcClock } from "react-icons/fc";
 import NewsletterSignup from "../Components/newsletter";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Blog = () => {
 
@@ -53,10 +53,29 @@ const Blog = () => {
         }
     };
 
+    // ________________________________________
+    // Dropdown
+    const dropdownRef = useRef(null);
+
     // REMOVE CATEGORY
     const removeCategory = (cat) => {
         setSelectedCategories(selectedCategories.filter(c => c !== cat));
     };
+
+    // ________________________________________
+    // Close dropdown on outside click
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     return (
         <div className="blog-cont">
@@ -77,7 +96,7 @@ const Blog = () => {
                 />
 
                 {/* CATEGORY FILTER */}
-                <div className="category-filter">
+                <div className="category-filter"  ref={dropdownRef}>
 
                     {/* SELECTED TAGS */}
                     {selectedCategories.map((category) => (
