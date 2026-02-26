@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import blogList from "../Components/blogList";
+import blogList from "../../Components/public/blogList";
 import "./Blog.css";
 import { FcClock } from "react-icons/fc";
-import NewsletterSignup from "../Components/newsletter";
+import NewsletterSignup from "../../Components/public/newsletter";
 import { useState, useRef, useEffect } from "react";
 
 const Blog = () => {

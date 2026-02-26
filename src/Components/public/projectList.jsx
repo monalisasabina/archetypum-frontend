@@ -1,7 +1,7 @@
-import houseImage1 from "../Pictures/download1.jpeg";
-import houseImage2 from "../Pictures/download.jpeg";
-import houseImage3 from "../Pictures/images.jpeg";
-import houseImage4 from "../Pictures/images.jpeg";
+import houseImage1 from "../../Pictures/download1.jpeg";
+import houseImage2 from "../../Pictures/download.jpeg";
+import houseImage3 from "../../Pictures/images.jpeg";
+import houseImage4 from "../../Pictures/images.jpeg";
 
 const projects = [
   {

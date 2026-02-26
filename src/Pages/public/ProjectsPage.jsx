@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import projectList from "../Components/projectList"
+import projectList from "../../Components/public/projectList"
 import "./ProjectPage.css";
 
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -1,4 +1,4 @@
-import projects from "../Components/projectList";
+import projects from "../../Components/public/projectList";
 import { useState } from "react";
 import "./Projects.css"
 

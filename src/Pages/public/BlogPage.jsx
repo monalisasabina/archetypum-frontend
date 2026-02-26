@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom"
-import blogList from "../Components/blogList"
+import blogList from "../../Components/public/blogList"
 import "./BlogPage.css"
 import { FaFacebook } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
