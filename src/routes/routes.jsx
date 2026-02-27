@@ -6,7 +6,7 @@ import ContactUs from "../Pages/public/ContactUs";
 import ErrorPage from "../Pages/public/ErrorPage";
 import Blog from "../Pages/public/Blog";
 import BlogPage from "../Pages/public/BlogPage";
-import BlogForm from "../Pages/admin/BlogForm";
+import BlogForm from "../Pages/admin/CreateBlog";
 import ProjectsPage from "../Pages/public/ProjectsPage";
 import CreateBlog from "../Pages/admin/CreateBlog";
 import AdminLayout from "../layouts/adminLayout";
