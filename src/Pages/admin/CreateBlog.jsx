@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BlogEditor from "../../Components/admin/BlogEditor";
+import './createBlog.css';
 
 const CreateBlog = (addBlog) => {
 
