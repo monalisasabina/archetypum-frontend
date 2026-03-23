@@ -59,9 +59,16 @@ const BlogPage = () => {
             />
             
             {/* Display the BlogText in Paragraphs */}
-            {blog.blogText.map((para,idx) =>(
+            {/* {blog.blogText.map((para,idx) =>(
                 <p key={idx}>{para}</p>
-            ))}
+            ))} */}
+
+            {/* Blog Content */}
+            <div 
+                className="blog-content"
+                dangerouslySetInnerHTML={{__html: blog.blogText}}
+                >
+            </div>
 
             {/* About Author */}
             <div className="blog-page-info">

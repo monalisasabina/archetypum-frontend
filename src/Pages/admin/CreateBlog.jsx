@@ -16,7 +16,7 @@ const CreateBlog = (addBlog) => {
         e.preventDefault();
        
         // Convert blogText into an array of paragraphs
-        const paragraphs = blogText.split("\n").filter(para => para.trim() !== "");
+        // const paragraphs = blogText.split("\n").filter(para => para.trim() !== "");
 
         // New Blog
         const newBlog = {
@@ -30,8 +30,8 @@ const CreateBlog = (addBlog) => {
                 name: authorName,
                 profilePicture: authorPic,
             },
-            blogText: paragraphs,
-            readTime: Math.ceil(paragraphs.join(" ").split(" ").length / 200), // Assuming average reading speed of 200 words per minute
+            blogText,
+            readTime: Math.ceil(blogText.replace(/<[^>]*>/g, "").split(" ").length / 200), // Assuming average reading speed of 200 words per minute
             link: `/blog/${title.replace(/\s+/g, '-').toLowerCase()}`,
         };
 
@@ -108,7 +108,7 @@ const CreateBlog = (addBlog) => {
                 <BlogEditor value={blogText} onChange={setBlogText}/>
 
                 {/* Submit Button */}
-                <button type="submit" onClick={handleSubmit}>Submit Blog</button>
+                <button type="submit">Submit Blog</button>
 
             </form>
           )
