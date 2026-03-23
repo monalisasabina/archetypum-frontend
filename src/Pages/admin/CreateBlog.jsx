@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BlogEditor from "../../Components/admin/BlogEditor";
 
 const CreateBlog = (addBlog) => {
 
@@ -104,12 +105,7 @@ const CreateBlog = (addBlog) => {
                 />
 
                 {/* Blog Text */}
-                <textarea
-                    placeholder="Blog Text"
-                    value={blogText}
-                    onChange={(e) => setBlogText(e.target.value)}
-                    required
-                ></textarea>
+                <BlogEditor value={blogText} onChange={setBlogText}/>
 
                 {/* Submit Button */}
                 <button type="submit" onClick={handleSubmit}>Submit Blog</button>
